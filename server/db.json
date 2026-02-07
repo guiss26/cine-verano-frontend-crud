@@ -1,0 +1,12 @@
+{
+    "movies": [
+        {
+            "id": "1", 
+            "url": "https.sfs",
+            "title": "Mary and Max",
+            "category": "drama",
+            "description": "Una niña de 8 años de Melbourne empieza a cartearse con un señor de cuarenta años judío y obeso que vive en Nueva York. La relación entre ambos derivará en una larga amistad más allá las fronteras de la edad y la distancia.",
+            "recommended": true
+        }
+    ]
+}
