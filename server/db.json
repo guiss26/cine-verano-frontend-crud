@@ -4,8 +4,32 @@
             "id": "1", 
             "url": "https.sfs",
             "title": "Mary and Max",
-            "category": "drama",
+            "category": "Drama",
             "description": "Una niña de 8 años de Melbourne empieza a cartearse con un señor de cuarenta años judío y obeso que vive en Nueva York. La relación entre ambos derivará en una larga amistad más allá las fronteras de la edad y la distancia.",
+            "recommended": true
+        },
+        {
+            "id": "2", 
+            "url": "https.sfs",
+            "title": "Shrek 2",
+            "category": "Comedia",
+            "description": "Una niña de 8 años de Melbourne empieza a cartearse con un señor de cuarenta años judío y obeso que vive en Nueva York. La relación entre ambos derivará en una larga amistad más allá las fronteras de la edad y la distancia.",
+            "recommended": true
+        },
+        {
+            "id": "3", 
+            "url": "https.sfs",
+            "title": "Insidious",
+            "category": "Terror",
+            "description": "Josh (Patrick Wilson), su esposa Renai (Rose Byrne) y sus tres hijos acaban de mudarse a una vieja casa. Pero, tras un desgraciado accidente, uno de los niños entra en coma y, al mismo tiempo, empiezan a producirse en la casa extraños fenómenos que aterrorizan a la familia.",
+            "recommended": false
+        },
+        {
+            "id": "4", 
+            "url": "https.sfs",
+            "title": "Amélie",
+            "category": "Romance",
+            "description": "Amélie es una comedia romántica francesa de 2001 dirigida por Jean-Pierre Jeunet. El guion fue escrito por Jeunet con la colaboración del novelista Guillaume Laurant en los diálogos, ​​ fue protagonizada por Audrey Tautou como Amélie. ",
             "recommended": true
         }
     ]
