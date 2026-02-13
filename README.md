@@ -1,6 +1,6 @@
-# Movie App 🎬  
+# Cine de verano 🎬  
 
-Aplicación web desarrollada con React de cine de verano que permite leer, editar, guardar y eliminar películas dinámicamente.
+Aplicación web Cine de Verano desarrollada con React que permite leer, editar, guardar y eliminar películas dinámicamente.
 
 ## 🚀 Funcionalidades
 - Listado de películas
