@@ -13,3 +13,13 @@ body {
   width: 100%;
 }
 
+header {
+  height: 15rem;
+  background-image: url('/cine-portada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
