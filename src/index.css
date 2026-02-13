@@ -3,7 +3,32 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
+
+  --cinema-dark: #0b0b0c;
+  --cinema-soft-dark: #141212;
+  --cinema-wine: #471016;
+  --cinema-wine-light: #7a2b30;
+  --cinema-accent: linear-gradient(135deg, #380f14 0%, #7a0f1c 50%, #140305 100%);
 }
+
+
+.bg-cinema-dark { background-color: var(--cinema-dark); }
+.bg-cinema-soft-dark { background-color: var(--cinema-soft-dark); }
+.bg-cinema-wine { background-color: var(--cinema-wine); }
+.bg-cinema-wine-light { background-color: var(--cinema-wine-light); }
+.bg-cinema-accent { background-color: var(--cinema-accent); }
+.bg-cinema-accent {
+  background: linear-gradient(135deg, #380f14 0%, #7a0f1c 50%, #140305 100%);
+}
+.text-cinema-wine { color: var(--cinema-wine); }
+.border-cinema-wine { border-color: var(--cinema-wine); }
+
+/* Clases hover */
+.hover\:bg-cinema-wine-light:hover { background-color: var(--cinema-wine-light); }
+.hover\:bg-cinema-accent:hover {
+  background: linear-gradient(135deg, #5a1822 0%, #a3162b 50%, #2a0a10 100%);
+}
+.hover\:text-cinema-wine:hover { color: var(--cinema-wine); }
 
 html,body {
   height: 100%;
