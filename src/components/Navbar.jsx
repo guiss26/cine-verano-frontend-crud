@@ -3,7 +3,7 @@ import { Film } from 'lucide-react';
 export default function Navbar() {
     return (
         <>
-            <header className="">
+            <header>
                 <nav className='text-white text-center'>
                     <div className='flex text-white gap-3 items-center justify-center '>
                         <Film size={50}/>
