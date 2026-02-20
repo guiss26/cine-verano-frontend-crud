@@ -48,3 +48,13 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+.movie-img {
+  background-image: url('/cine-portada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
