@@ -1,4 +1,3 @@
-
 const URL_API_FAKE = 'http://localhost:3000/movies'
 
 //GET
