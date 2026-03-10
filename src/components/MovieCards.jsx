@@ -1,8 +1,17 @@
 import { Trash2 } from 'lucide-react';
 import { Pencil } from 'lucide-react';
 import { Star } from 'lucide-react';
+import { deleteMovie } from '../services';
+import { useParams } from 'react-router-dom';
 
-export default function MovieCards({ movies }) {
+export default function MovieCards({ movies, setMovies }) {
+    // const { id } = useParams()
+    const handleDelete = async(id) => {
+        const data = await deleteMovie(id) 
+        setMovies(movies.filter(movie => movie.id !== id))  
+        console.log('se eliminó la película correctamente')
+    }
+
     return (
         <>
             <article className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 py-10'>
@@ -19,7 +28,7 @@ export default function MovieCards({ movies }) {
 
                             <div className='flex gap-3 justify-center mt-6'>
                                 <button className='text-white w-50 py-2 rounded-xl px-5 flex justify-center gap-1 items-center bg-blue-500 hover:bg-blue-950'><Pencil size={20} /> Editar</button>
-                                <button className='text-white w-50 py-2 rounded-xl px-5 flex justify-center gap-1 items-center bg-red-700 hover:bg-red-900'><Trash2 size={20} /> Eliminar</button>
+                                <button onClick={() => handleDelete(movie.id)} className='text-white w-50 py-2 rounded-xl px-5 flex justify-center gap-1 items-center bg-red-700 hover:bg-red-900'><Trash2 size={20} /> Eliminar</button>
                             </div>
                         </figcaption>
                     </div>
