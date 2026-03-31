@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Trash2 } from 'lucide-react';
-import { Pencil } from 'lucide-react';
-import { Star } from 'lucide-react';
 import MovieCards from './components/MovieCards';
 import { getAllMovies } from './services';
+import FormMovies from './components/FormMovies';
 
 function App() {
   const [movies, setMovies] = useState([])
@@ -25,6 +23,14 @@ function App() {
     fetchData()
   }, [])
 
+  const showForm = () => {
+
+  }
+
+  const handleMovieCreated = (newMovie) => {
+    setMovies(prev => [...prev, newMovie])
+  }
+
   if (loading) return <p className='text-center my-10 font-medium text-2xl text-white'>Cargando ...</p>
 
   if (error) return <p className='text-2xl text-red-900'>Error al cargar películas</p>
@@ -41,7 +47,10 @@ function App() {
           <button className='bg-cinema-accent hover:bg-cinema-wine-light text-white py-2 px-4 rounded-xl transition duration-300'>+ Agregar película</button>
         </div>
 
-        <h2 className='text-3xl mt-5'>Catálogo completo</h2>
+        {/* quitar después, es solo de prueba */}
+        <FormMovies onMovieCreated={handleMovieCreated}/>
+
+        <h2 className='text-3xl mt-5 text-white'>Catálogo completo</h2>
 
         <MovieCards movies={movies} setMovies={setMovies} />
       </section>
