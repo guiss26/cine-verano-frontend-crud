@@ -8,6 +8,17 @@ export async function getAllMovies() {
 }
 
 // POST 
+export async function createMovie(newMovie) {
+    const response = await fetch(URL_API_FAKE, {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newMovie)
+    })
+
+    if (!response.ok) throw new Error('Error al crear película')
+}
 
 // UPDATE/:id
 
