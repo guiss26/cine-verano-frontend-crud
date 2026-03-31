@@ -18,6 +18,7 @@ export async function createMovie(newMovie) {
     })
 
     if (!response.ok) throw new Error('Error al crear película')
+        return response.json()
 }
 
 // UPDATE/:id
