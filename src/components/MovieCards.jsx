@@ -2,7 +2,6 @@ import { Trash2 } from 'lucide-react';
 import { Pencil } from 'lucide-react';
 import { Star } from 'lucide-react';
 import { deleteMovie } from '../services';
-import { useParams } from 'react-router-dom';
 
 export default function MovieCards({ movies, setMovies }) {
     // const { id } = useParams()
