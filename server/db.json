@@ -47,6 +47,38 @@
       "category": "Romance",
       "description": "Esta película es de prueba 4",
       "recommended": true
+    },
+    {
+      "id": "dcb0",
+      "title": "Prueba POST",
+      "category": "Comedia",
+      "description": "Prueba POST sin imágenes, guardado con ayuda de Claude con pruebas en el proceso.",
+      "recommended": false,
+      "url": ""
+    },
+    {
+      "id": "086b",
+      "title": "Prueba 2 POST",
+      "category": "Terror",
+      "description": "Esta prueba dos método POST porque no me fijé que errores ponía en la consola. Falta poner un alert o modal que cuando se guarde diga guardado correctamente. Y validaciones para que sean obligatorios TODOS los campos",
+      "recommended": true,
+      "url": ""
+    },
+    {
+      "id": "41c0",
+      "title": "Prueba 3 POST actualización creación nueva peli",
+      "category": "Acción",
+      "description": "Prueba para ver si la película no solo se ha creado correctamente sino también que al darle al botón guardar se ha actualiza sin recargar la página.",
+      "recommended": true,
+      "url": ""
+    },
+    {
+      "id": "9a6a",
+      "title": "Prueba 4 de creación + actualización",
+      "category": "Aventura",
+      "description": "A ver si con esta se actualiza, falta ver lo del recommended",
+      "recommended": true,
+      "url": ""
     }
   ]
 }
